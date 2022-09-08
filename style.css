@@ -1,0 +1,136 @@
+body{
+margin:0;
+font-family: 'Roboto', sans-serif;
+}
+.header {
+    background: #090A0B;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 20px;
+}
+.conteiner {
+    width: 900px;
+}
+.menu{
+    color: white;
+    justify-content: start;
+    display: flex;
+}
+.menu ul {
+    list-style-type: none;
+    display: flex;
+    gap:20px;
+    padding: 0;
+}
+.menu ul a{
+    color:white;
+    text-decoration: none;
+}
+.image {
+    margin-top: 50px;
+    
+}
+.image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+.infos{
+    color:#818188;
+}
+.nome{
+    color: white;
+}
+.description{
+    color:#CECECE;
+}
+.content{
+    background-color: #191B1F;
+    display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 20px;
+}
+.content h1{
+    color:white;
+}
+
+.list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.item{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 15px;
+    width: 280px;
+}
+.item img{
+    border-radius: 5px;
+    width: 280px;
+    height: 170px;
+    object-fit: cover;
+
+}
+.item span{
+    font-size: 12px;
+    color: #3AAAE4;
+}
+.item h2{
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+.item p{
+    color:#8B9AA3;
+}
+.item time{
+    font-size: 12px;
+    color: #8B9AA3;
+}
+
+.footer{
+    background-color: #090A0B;
+    display: flex;
+justify-content: center;
+align-items: center;
+padding-bottom: 20px;
+color: white;
+padding-top: 20px;
+}
+.infos-footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.social{
+display: flex;
+justify-content: center;
+align-items: center;
+gap:10px;
+}
+.social a{
+    color: white;
+    
+}
+@media only screen and (max-width: 440px){
+    .conteiner {
+        width: 90%;
+        padding: 10px;
+    }
+    .list {
+        grid-template-columns: 1fr ;
+
+    }
+    .item{
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .item img{
+        width: 100%;
+    }
+}
